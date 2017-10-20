@@ -1,0 +1,20 @@
+{
+  "name": "Improved new tab page",
+  "description": "Display bookmarks on the new tab page",
+  "version": "0.1",
+  "incognito": "split",
+	
+	"browser_action" :{
+		"default_icon": "skull-icon-png-1.png",
+		"default_popup": "start-page.html",
+		"default_title": "Universal search"
+	},	
+
+	"icons" : {
+		"64" : "skull-icon-png-1.png"
+	},
+	
+   "chrome_url_overrides": {"newtab": "start-page.html"},
+  "permissions": ["bookmarks", "history", "storage", "https://*/*", "http://*/*"],
+  "manifest_version": 2
+}
